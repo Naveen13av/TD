@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>TD Insurance</title>
-	<link rel="stylesheet" type="text/css" href="css/insuranced.css">
+	<link rel="stylesheet" type="text/css" href="css/insurance.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
@@ -15,7 +15,7 @@
 <body>
 
 	<!-- desktop header -->
-	<div id="header" class="header-primary hidden-xs hidden-sm">
+	<div id="header" class="header-primary hidden-xs">
 		<div class="container">
 			<div class="header-logo">
 				<a href="https://www.tdcanadatrust.com/"><img src="img/td-logo.png" alt="TD Bank"></a>	
@@ -25,7 +25,7 @@
 				<nav>
 					<ul>
 						<li><a href="https://www.tdinsurance.com/" target="_blank">Products</a></li>
-						<li><a href="https://www.tdinsurance.com/claims target="_blank">Claims</a></li>
+						<li><a href="https://www.tdinsurance.com/claims" target="_blank">Claims</a></li>
 						<li><a href="https://www.tdinsurance.com/customer-service/contact-us" target="_blank">Contact Us</a></li>						
 					</ul>
 				</nav>
@@ -34,8 +34,8 @@
 				<nav>
 					<ul>
 						<li class="dropdown">
-							<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-expanded="false">
 	                            <li><a aria-label="Alberta" href="#">Alberta</a></li>
 	                            <li><a aria-label="British columbia" href="#">British Columbia</a></li>
 								<li><a aria-label="Manitoba" href="#">Manitoba</a></li>
@@ -45,8 +45,8 @@
 	                        </ul>
 	                    </li>					
 						<li class="dropdown">
-							<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-expanded="false">
 	                            <li><a aria-label="english" href="#">English</a></li>
 	                             <li>
 	                                <a aria-label="Français" href="#">Français</a>
@@ -63,10 +63,10 @@
 	
 
 	<!-- Mobile header -->
-	<nav class="navbar navbar-default navbar-fixed-top show-sm hidden-lg hidden-md">
+	<nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-lg hidden-md">
 		<div class="container">
 			<div class="navbar-header">
-				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+				 <button type="button" class="navbar-toggle" aria-haspopup="true" data-toggle="collapse" data-target="#top-navbar">
 					 <i class="fa fa-bars" aria-hidden="true"></i>
 				 </button>
 				 <span class="navbar-brand"><a href="https://www.tdcanadatrust.com/"><img src="img/td-logo.png" alt="TD Bank"></a></span>			 
@@ -75,11 +75,11 @@
 			<div class="collapse navbar-collapse" id="top-navbar">
 				<ul class="nav navbar-nav navbar-right">
 						<li><a href="https://www.tdinsurance.com/" target="_blank">Products</a></li>
-						<li><a href="https://www.tdinsurance.com/claims target="_blank">Claims</a></li>
+						<li><a href="https://www.tdinsurance.com/claims" target="_blank">Claims</a></li>
 						<li><a href="https://www.tdinsurance.com/customer-service/contact-us" target="_blank">Contact Us</a></li>
 						<li class="dropdown">
-								<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-expanded="false">
 									<li><a aria-label="Alberta" href="#">Alberta</a></li>
 									<li><a aria-label="British columbia" href="#">British Columbia</a></li>
 									<li><a aria-label="Manitoba" href="#">Manitoba</a></li>
@@ -89,8 +89,8 @@
 								</ul>
 						</li>					
 						<li class="dropdown">
-								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-expanded="false">
 									<li><a aria-label="english" href="#">English</a></li>
 									 <li>
 										<a aria-label="Français" href="#">Français</a>
@@ -116,18 +116,18 @@
 				<div class="row">
 							<div class="form-group col-xs-12 col-sm-offset-3 col-sm-6">
 								<label for="userLoginName">Username:</label>
-								<input name="leftAlign" type="text" class="form-control text-left" id="userLoginName" placeholder="Enter Username">
+								<input aria-label="Enter username" name="userloginName" type="text" class="form-control text-left" id="userLoginName" placeholder="Enter Username">
 							</div>
 							<div class="form-group col-xs-12 col-sm-offset-3 col-sm-6">
 								<label  for="userLoginPassword">Passowrd:</label>
-								<input name="leftAlign" type="password" class="form-control text-left" id="userLoginPassword" placeholder="Enter password">
+								<input aria-label="enter password" name="userPassword" type="password" class="form-control text-left" id="userLoginPassword" placeholder="Enter password">
 							</div>
 				</div>			
 			  </div>
 			  <div class="modal-footer">
 			  <div class="row modal-footer-buttons">
-				<button type="button" class="btn btn-secondary col-lg-2 col-lg-offset-4 col-md-offset-3 col-md-3 col-sm-12 col-xs-12" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary col-lg-2 col-md-3 col-sm-12 col-xs-12">Login</button>
+				<button type="button" aria-label="Close" class="btn btn-secondary col-lg-2 col-lg-offset-4 col-md-offset-3 col-md-3 col-sm-12 col-xs-12" data-dismiss="modal">Close</button>
+				<button type="button" aria-label="Login" class="btn btn-primary col-lg-2 col-md-3 col-sm-12 col-xs-12">Login</button>
 			  </div>
 			  </div>
 			</div>
@@ -171,10 +171,10 @@
 							<div class="row">
 								<div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
 									<div class="form-group col-xs-12 col-lg-5 col-sm-12 col-md-5">
-										<input aria-label="Email address"name="emailAddress" required type="text" class="form-control text-left" id="emailAddress" placeholder="Email address*">
+										<input aria-label="Email address" name="emailAddress" required type="text" class="form-control text-left" id="emailAddress" placeholder="Email address*">
 									</div>
 									<div class="form-group col-xs-12 col-lg-3 col-sm-12 col-md-3">
-										<input aria-label="Date of Birth"name="dateOfBirth" type="text" class="form-control text-left" id="dateOfBirth" placeholder="Date of Birth">
+										<input aria-label="Date of Birth" name="dateOfBirth" type="text" class="form-control text-left" id="dateOfBirth" placeholder="Date of Birth">
 									</div>
 									<div class="form-group col-xs-12 col-lg-4 col-sm-12 col-md-4">
 										<input aria-label="Social Insurance Number" required name="socialInsuranceNumber" type="text" class="form-control text-left" id="socialInsuranceNumber" placeholder="Social Insurance Number*">
@@ -216,10 +216,10 @@
 					<a target="_blank" href="http://www.td.com/careers/why-td/index.jsp">Careers</a>
 				</div>
 				<div class="social-links">
-					<button class="btn-circle"><i class="fa fa-facebook-f"></i></button>
-					<button class="btn-circle"><i class="fa fa-twitter"></i></button>
-					<button class="btn-circle"><i class="fa fa-youtube-play"></i></button>
-					<button class="btn-circle"><i class="fa fa-wifi"></i></button>
+					<a aria-label="facebook" href="https://www.facebook.com/" class="btn-circle btn-circle-facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+					<a aria-label="twitter" href="https://twitter.com/?lang=en" class="btn-circle"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a aria-label="youtube" href="https://www.youtube.com/" class="btn-circle"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a aria-label="" href="#" class="btn-circle"><i class="fa fa-wifi" aria-hidden="true"></i></a>
 				</div>
 			</div>
         </div>
