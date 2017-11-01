@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>TD Insurance</title>
+	<link rel="stylesheet" type="text/css" href="css/insuranced.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<!-- desktop header -->
+	<div id="header" class="header-primary hidden-xs hidden-sm">
+		<div class="container">
+			<div class="header-logo">
+				<a href="https://www.tdcanadatrust.com/"><img src="img/td-logo.png" alt="TD Bank"></a>	
+			</div>		
+			<h1>TD Insurance</h1>
+			<div class="header-links">
+				<nav>
+					<ul>
+						<li><a href="https://www.tdinsurance.com/" target="_blank">Products</a></li>
+						<li><a href="https://www.tdinsurance.com/claims target="_blank">Claims</a></li>
+						<li><a href="https://www.tdinsurance.com/customer-service/contact-us" target="_blank">Contact Us</a></li>						
+					</ul>
+				</nav>
+			</div>
+			<div class="header-right-side">
+				<nav>
+					<ul>
+						<li class="dropdown">
+							<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+	                            <li><a aria-label="Alberta" href="#">Alberta</a></li>
+	                            <li><a aria-label="British columbia" href="#">British Columbia</a></li>
+								<li><a aria-label="Manitoba" href="#">Manitoba</a></li>
+								<li><a aria-label="Nova Scotia" href="#">Nova Scotia</a></li>
+								<li><a aria-label="Ontario" href="#">Ontario</a></li>
+								<li><a aria-label="Quebec" href="#">Quebec</a></li>
+	                        </ul>
+	                    </li>					
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+	                            <li><a aria-label="english" href="#">English</a></li>
+	                             <li>
+	                                <a aria-label="Français" href="#">Français</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+						<li><a id="search" href="#"><span class="glyphicon glyphicon-search"></span></a><input id="search-input" class="search" type="text" placeholder="Search" aria-label="search"></li>		
+						<li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-lock"></span> Login</a></li>
+					</ul>
+				</nav>			
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Mobile header -->
+	<nav class="navbar navbar-default navbar-fixed-top show-sm hidden-lg hidden-md">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+					 <i class="fa fa-bars" aria-hidden="true"></i>
+				 </button>
+				 <span class="navbar-brand"><a href="https://www.tdcanadatrust.com/"><img src="img/td-logo.png" alt="TD Bank"></a></span>			 
+				 <h1>TD Insurance</h1>
+			</div>
+			<div class="collapse navbar-collapse" id="top-navbar">
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://www.tdinsurance.com/" target="_blank">Products</a></li>
+						<li><a href="https://www.tdinsurance.com/claims target="_blank">Claims</a></li>
+						<li><a href="https://www.tdinsurance.com/customer-service/contact-us" target="_blank">Contact Us</a></li>
+						<li class="dropdown">
+								<a id="province-dropdown"href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Ontario">Ontario <span class="glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li><a aria-label="Alberta" href="#">Alberta</a></li>
+									<li><a aria-label="British columbia" href="#">British Columbia</a></li>
+									<li><a aria-label="Manitoba" href="#">Manitoba</a></li>
+									<li><a aria-label="Nova Scotia" href="#">Nova Scotia</a></li>
+									<li><a aria-label="Ontario" href="#">Ontario</a></li>
+									<li><a aria-label="Quebec" href="#">Quebec</a></li>
+								</ul>
+						</li>					
+						<li class="dropdown">
+								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="English">En <span class="glyphicon glyphicon-chevron-down"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li><a aria-label="english" href="#">English</a></li>
+									 <li>
+										<a aria-label="Français" href="#">Français</a>
+									</li>
+								</ul>
+						</li>
+						<li><input id="search-input-mobile" class="mobile-search" type="text" placeholder="Search" aria-label="search"></li>		
+						<li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-lock"></span> Login</a></li>           
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+	    <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-center" id="loginModal">Login</h4>
+			  </div>
+			  <div class="modal-body">
+				<div class="row">
+							<div class="form-group col-xs-12 col-sm-offset-3 col-sm-6">
+								<label for="userLoginName">Username:</label>
+								<input name="leftAlign" type="text" class="form-control text-left" id="userLoginName" placeholder="Enter Username">
+							</div>
+							<div class="form-group col-xs-12 col-sm-offset-3 col-sm-6">
+								<label  for="userLoginPassword">Passowrd:</label>
+								<input name="leftAlign" type="password" class="form-control text-left" id="userLoginPassword" placeholder="Enter password">
+							</div>
+				</div>			
+			  </div>
+			  <div class="modal-footer">
+			  <div class="row modal-footer-buttons">
+				<button type="button" class="btn btn-secondary col-lg-2 col-lg-offset-4 col-md-offset-3 col-md-3 col-sm-12 col-xs-12" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary col-lg-2 col-md-3 col-sm-12 col-xs-12">Login</button>
+			  </div>
+			  </div>
+			</div>
+	    </div>
+	</div>	
+	
+	<!-- Form-->
+	<div class="content-area">
+		<div class="container">
+			<form id="personalInfo" method="post" name="personalInfo">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 general-info">
+						<div class="general-info">	
+							<h3>Tell Us About Yourself</h3>
+							<p><strong>Thanks for choosing TD Insurnace! In order to safely set up your new accounts and services, please tell us about yourself.</strong></p>
+						</div>
+						<div class="general-input">
+							<h3>Personal Information</h3>
+							<div class="row">
+								<div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+									<div class="select form-group col-xs-12 col-lg-2 col-sm-12 col-md-2">
+											<select aria-label="Title" class="form-control" id="dropdownSmall">
+												<option value="" disabled selected>Title *</option>
+												<option value="Mr">Mr.</option>
+												<option value="Ms">Ms.</option>
+												<option value="Mrs">Mrs.</option>
+												<option value="Miss">Miss</option>
+											</select>
+									</div>
+									<div class="form-group col-xs-12 col-lg-3 col-sm-12 col-md-3 ">
+										<input aria-label="First Name" name="firstName" type="text" required class="form-control text-left" id="firstName" placeholder="First Name*">
+									</div>
+									<div class="form-group col-xs-12 col-lg-3 col-sm-12 col-md-3 ">
+										<input aria-label="Middle Initial" name="middleName" type="text" class="form-control text-left" id="middleName" placeholder="Middle Initial">
+									</div>
+									<div class=" form-group col-xs-12 col-lg-4 col-sm-12 col-md-4 ">
+										<input aria-label="Last Name" name="lastName" type="text" required class="form-control text-left" id="lastName" placeholder="Last Name*">
+									</div>						
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
+									<div class="form-group col-xs-12 col-lg-5 col-sm-12 col-md-5">
+										<input aria-label="Email address"name="emailAddress" required type="text" class="form-control text-left" id="emailAddress" placeholder="Email address*">
+									</div>
+									<div class="form-group col-xs-12 col-lg-3 col-sm-12 col-md-3">
+										<input aria-label="Date of Birth"name="dateOfBirth" type="text" class="form-control text-left" id="dateOfBirth" placeholder="Date of Birth">
+									</div>
+									<div class="form-group col-xs-12 col-lg-4 col-sm-12 col-md-4">
+										<input aria-label="Social Insurance Number" required name="socialInsuranceNumber" type="text" class="form-control text-left" id="socialInsuranceNumber" placeholder="Social Insurance Number*">
+									</div>						
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2 col-lg-offset-3 col-md-offset-3 col-sm-12 col-md-3 col-xs-12">
+									<button type="button" class="btn col-xs-12 btn-secondary" aria-label="Cancel">Cancel</button>						
+								</div>
+								<div class="col-lg-2 col-sm-12 col-md-3 col-xs-12">
+									<button type="submit" class="btn col-xs-12 btn-primary" aria-label="Submit">Submit</button>
+								</div>
+							</div>			
+						</div>			
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 coverage-info">
+						<span>Your applying for: </span>
+						<h3>TD Travel Medical Insurance</h3>
+						<button type="button" class="btn col-xs-12 btn-primary" aria-label="See more coverage options">See More Coverage options</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<!--footer-->
+    <footer id="footer" class="fullwidth">
+        <div class="container text-center">
+			<div class="col-md-6 col-lg-6 col-xs-12 col-lg-offset-3 col-md-offset-3 legal-white">
+				<div class="legal-copy">
+					<p>Need to talk to us directly?<a href="https://www.tdinsurance.com/customer-service/contact-us" target="_blank"> Contact us&#xA0;<span class="glyphicon glyphicon-menu-right"></a></p>
+				</div>
+				<div class="footer-links">
+					<a target="_blank" href="https://www.td.com/privacy-and-security/privacy-and-security/index.jsp?src=comfy2">Privacy and Security</a>
+					<a target="_blank" href="https://www.td.com/to-our-customers/?src=comfy2">Legal</a>
+					<a target="_blank" href="http://www.tdcanadatrust.com/customer-service/accessibility/accessibility-at-td/index.jsp?src=comfy2">Accessibility</a>
+					<a target="_blank" href="https://www.td.com/about-tdbfg/our-business/index.jsp">About&#xA0;Us</a>
+					<a target="_blank" href="http://www.td.com/careers/why-td/index.jsp">Careers</a>
+				</div>
+				<div class="social-links">
+					<button class="btn-circle"><i class="fa fa-facebook-f"></i></button>
+					<button class="btn-circle"><i class="fa fa-twitter"></i></button>
+					<button class="btn-circle"><i class="fa fa-youtube-play"></i></button>
+					<button class="btn-circle"><i class="fa fa-wifi"></i></button>
+				</div>
+			</div>
+        </div>
+    </footer>
+	
+	<script src="js/insurance.js"></script>
+</body>
+</html>
